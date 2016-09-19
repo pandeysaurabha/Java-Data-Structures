@@ -28,4 +28,27 @@ public class SinglyLinkedList<T> {
 			temp = temp.getNextNode();
 		}
 	}
+
+	public void removeFront() {
+
+		if (head == null) {
+			System.out.println("Underflow");
+		}
+		Node<T> temp = head;
+		head = temp.getNextNode();
+
+	}
+
+	public int size() {
+		int count = 0;
+		Node<T> temp = head;
+		while (true) {
+			if (temp == null) {
+				break;
+			}
+			temp = temp.getNextNode();
+			count++;
+		}
+		return count;
+	}
 }

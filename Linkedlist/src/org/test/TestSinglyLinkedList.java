@@ -14,8 +14,18 @@ public class TestSinglyLinkedList {
 		linkedList.add("C");
 		linkedList.add("D");
 		linkedList.add("E");
+
 		// Traverse Linked List
 		linkedList.iterate();
+
+		// Get size of Linked List
+		System.out.println(linkedList.size());
+
+		// Remove element from Linked List
+		linkedList.removeFront();
+
+		// Get size of Linked List
+		System.out.println(linkedList.size());
 
 	}
 
