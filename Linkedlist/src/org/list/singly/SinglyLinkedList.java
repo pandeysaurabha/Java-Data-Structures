@@ -36,7 +36,9 @@ public class SinglyLinkedList<T> {
 		}
 		Node<T> temp = head;
 		head = temp.getNextNode();
-
+		if (head == null) {
+			tail = null;
+		}
 	}
 
 	public int size() {
